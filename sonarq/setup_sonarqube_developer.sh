@@ -6,6 +6,12 @@ read -p "Enter the SonarQube Developer Edition version (e.g., 10.2.0.68432): " V
 # Validate input
 if [[ -z "$VERSION" ]]; then
   echo "Version number cannot be empty."
+  VERSION=2025.3.1.109879
+fi
+
+# Validate input
+if [[ -z "$VERSION" ]]; then
+  echo "Version number cannot be empty."
   exit 1
 fi
 
